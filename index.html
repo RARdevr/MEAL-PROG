@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>webapp</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>pytotrack</h1>
+        <div class="meal">
+            <h2 onclick="toggleDetails('breakfast-details')">breakfast</h2>
+            <div id="breakfast-details" class="meal-details">
+                <ul>
+                    <li>Oatmeal with Banana and Peanut Butter</li>
+                    <li>Calories: 450, Protein: 15g, Fat: 18g, Carbs: 60g</li>
+                </ul>
+                <label class="checkbox-container">
+                    <input type="checkbox" id="breakfast-checkbox">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+        </div>
+        <div class="meal">
+            <h2 onclick="toggleDetails('snack1-details')">morning snack</h2>
+            <div id="snack1-details" class="meal-details">
+                <ul>
+                    <li>Greek Yogurt with Honey and Nuts</li>
+                    <li>Calories: 250, Protein: 15g, Fat: 10g, Carbs: 25g</li>
+                </ul>
+                <label class="checkbox-container">
+                    <input type="checkbox" id="snack1-checkbox">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+        </div>
+        <div class="meal">
+            <h2 onclick="toggleDetails('lunch-details')">lunch</h2>
+            <div id="lunch-details" class="meal-details">
+                <ul>
+                    <li>Chicken and Rice Bowl</li>
+                    <li>Calories: 650, Protein: 45g, Fat: 12g, Carbs: 80g</li>
+                </ul>
+                <label class="checkbox-container">
+                    <input type="checkbox" id="lunch-checkbox">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+        </div>
+        <div class="meal">
+            <h2 onclick="toggleDetails('snack2-details')">afternoon snack</h2>
+            <div id="snack2-details" class="meal-details">
+                <ul>
+                    <li>Apple with Cheese</li>
+                    <li>Calories: 200, Protein: 7g, Fat: 10g, Carbs: 25g</li>
+                </ul>
+                <label class="checkbox-container">
+                    <input type="checkbox" id="snack2-checkbox">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+        </div>
+        <div class="meal">
+            <h2 onclick="toggleDetails('dinner-details')">dinner</h2>
+            <div id="dinner-details" class="meal-details">
+                <ul>
+                    <li>Spaghetti with Tomato Sauce and Ground Beef</li>
+                    <li>Calories: 800, Protein: 35g, Fat: 25g, Carbs: 95g</li>
+                </ul>
+                <label class="checkbox-container">
+                    <input type="checkbox" id="dinner-checkbox">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+        </div>
+        <div class="meal">
+            <h2 onclick="toggleDetails('snack3-details')">evening snack</h2>
+            <div id="snack3-details" class="meal-details">
+                <ul>
+                    <li>Cookies or Chocolate Bar</li>
+                    <li>Calories: 200, Protein: 2g, Fat: 10g, Carbs: 30g</li>
+                </ul>
+                <label class="checkbox-container">
+                    <input type="checkbox" id="snack3-checkbox">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+        </div>
+    </div>
+    <script>
+        function toggleDetails(id) {
+            var details = document.getElementById(id);
+            if (details.style.display === "block") {
+                details.style.display = "none";
+            } else {
+                details.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
